@@ -1,0 +1,117 @@
+cleaner:
+  enabled: true
+  period: 60 #seconds
+  expire-time: 30 #days
+  log-in-console: true
+  filter:
+    ignore-without-owners: true
+    ignore-worlds:
+      - disabled_world
+    ignore-regions:
+      - spawn
+      - pvp
+      - another_region
+
+limit:
+  in-global-default-flags:
+    pvp: DENY
+  in-own-region-default-flags: {}
+
+  in-global:
+    default: #default values (do not require permission)
+      max-count: 1
+      vertexpand: false
+      x-min: 15
+      x-max: 40
+      y-min: 15
+      y-max: 40
+      z-min: 15
+      z-max: 40
+    vip: #permission: aregionlimiter.in-global.vip
+      max-count: 3
+      vertexpand: false
+      x-min: 15
+      x-max: 50
+      y-min: 15
+      y-max: 50
+      z-min: 15
+      z-max: 50
+    premium: #permission: aregionlimiter.in-global.premium
+      max-count: 5
+      vertexpand: false
+      x-min: 15
+      x-max: 60
+      y-min: 15
+      y-max: 60
+      z-min: 15
+      z-max: 60
+    
+  in-own-region:
+    default: #default values (do not require permission)
+      max-count: 1
+      vertexpand: false
+      x-min: 1
+      x-max: 40
+      y-min: 1
+      y-max: 40
+      z-min: 1
+      z-max: 40
+
+limit-per-world:
+  in-global:
+    world:
+      default:
+        max-count: 1
+        vertexpand: false
+        x-min: 1
+        x-max: 40
+        y-min: 1
+        y-max: 40
+        z-min: 1
+        z-max: 40
+      vip:
+        max-count: 3
+        vertexpand: false
+        x-min: 15
+        x-max: 50
+        y-min: 15
+        y-max: 50
+        z-min: 15
+        z-max: 50
+      premium:
+        max-count: 5
+        vertexpand: false
+        x-min: 15
+        x-max: 60
+        y-min: 15
+        y-max: 60
+        z-min: 15
+        z-max: 60
+    nether:
+      default:
+        max-count: 1
+        vertexpand: false
+        x-min: 1
+        x-max: 40
+        y-min: 1
+        y-max: 40
+        z-min: 1
+        z-max: 40
+      vip:
+        max-count: 3
+        vertexpand: false
+        x-min: 15
+        x-max: 50
+        y-min: 15
+        y-max: 50
+        z-min: 15
+        z-max: 50
+      premium:
+        max-count: 5
+        vertexpand: false
+        x-min: 15
+        x-max: 60
+        y-min: 15
+        y-max: 60
+        z-min: 15
+        z-max: 60

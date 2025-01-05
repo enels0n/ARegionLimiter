@@ -1,0 +1,9 @@
+name: ${project.name}
+main: ${project.groupId}.${project.name}
+version: ${project.version}
+authors: [E_NeLsOn]
+depend: [WorldGuard,WorldEdit,Essentials]
+softdepend: [LuckPerms]
+api-version: 1.21
+commands:
+  aregionlimiter:
